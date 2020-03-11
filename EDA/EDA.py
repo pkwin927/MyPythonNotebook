@@ -859,6 +859,8 @@ def DataSetInfo(DF):
     
     print('Numerical:',DF.select_dtypes(include = ['int64','int32','float32','float64']).shape[1])
     
+    print('datetime:',DF.select_dtypes(include = ['datetime64[ns]']).shape[1])
+    
     print('##################################################')
     
     print('## Null Data ##')
